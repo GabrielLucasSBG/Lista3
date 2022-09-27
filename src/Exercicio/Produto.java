@@ -39,9 +39,11 @@ public class Produto {
         this.descricao = descricao;
     }
 
-    public Produto(String nome, int valor) {
+    public Produto(String nome, String descricao, int quantidade, double valorTotal) {
+        super();
+        this.quantidade = quantidade;
+        this.valor = valorTotal;
         this.nome = nome;
-        this.valor = valor;
-        this.prox = null;
+        this.descricao = descricao;
     }
 }
